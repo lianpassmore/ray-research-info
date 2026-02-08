@@ -1,0 +1,33 @@
+---
+interface Props {
+	currentPage?: string;
+}
+const { currentPage = '' } = Astro.props;
+
+const pages = [
+	{ href: '/about', label: 'About' },
+	{ href: '/safety', label: 'Safety' },
+	{ href: '/research', label: 'Research' },
+	{ href: '/privacy', label: 'Privacy' },
+];
+---
+
+<nav class="nav-bar">
+	<a href="/" class="text-sm font-bold text-charcoal hover:text-clay transition-colors">
+		← Home
+	</a>
+	<div class="flex items-center gap-3">
+		{pages.map((page) => (
+			<a
+				href={page.href}
+				class:list={[
+					"text-xs font-bold uppercase tracking-wide transition-colors",
+					page.label === 'Safety' ? "text-destructive hover:text-destructive/70" :
+					currentPage === page.label ? "text-clay" : "text-charcoal/50 hover:text-charcoal",
+				]}
+			>
+				{page.label === 'Safety' && '⚠️ '}{page.label}
+			</a>
+		))}
+	</div>
+</nav>

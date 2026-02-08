@@ -2,237 +2,61 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout>
-  <!-- Hero Section -->
-  <header class="pt-8 pb-10 animate-fade-in">
-    <div class="border-b border-charcoal/10 pb-6 mb-6">
-      <p class="label-sm text-clay mb-2">Research Pilot</p>
-      <h1 class="heading-xl mb-2">RAY</h1>
-      <h2 class="heading-lg text-charcoal/60">Participant Resource Guide</h2>
-      <p class="font-mono text-sm mt-4 text-warm-grey">February 12-26, 2026</p>
-    </div>
+<Layout showNav={false}>
+	<!-- Hero Section -->
+	<header class="pt-8 pb-10 animate-fade-in">
+		<div class="border-b border-charcoal/10 pb-6 mb-6">
+			<p class="label-sm text-clay mb-2">Research Pilot</p>
+			<h1 class="heading-xl mb-2">RAY</h1>
+			<h2 class="heading-lg text-charcoal/60">Participant Resource Guide</h2>
+			<p class="font-mono text-sm mt-4 text-warm-grey">February 12-26, 2026</p>
+		</div>
+	</header>
 
-    <!-- Quick Navigation for Mobile -->
-    <nav class="flex flex-wrap gap-2">
-      <a href="#about" class="btn-ghost text-xs border border-charcoal/20">About</a>
-      <a href="#safety" class="btn-ghost text-xs border border-charcoal/20 text-destructive font-bold">Safety</a>
-      <a href="#privacy" class="btn-ghost text-xs border border-charcoal/20">Privacy</a>
-      <a href="#contact" class="btn-ghost text-xs border border-charcoal/20">Contact</a>
-    </nav>
-  </header>
+	<main class="space-y-6 pb-16 animate-fade-in" style="animation-delay: 0.1s">
 
-  <main class="space-y-16 pb-20 animate-fade-in" style="animation-delay: 0.1s">
-    
-    <!-- About Section -->
-    <section id="about" class="scroll-mt-10">
-      <h3 class="heading-lg mb-6">About Ray</h3>
-      <div class="body-text space-y-4">
-        <p>
-          Ray is an AI relationship coach built as part of a Master's research project exploring whether AI can be designed ethically for vulnerable conversations.
-        </p>
-        <p>
-          Ray works with any relationship: romantic, family, friends, work, yourself. It helps you see patterns you might be stuck in.
-        </p>
+		<!-- Navigation Cards -->
+		<nav class="space-y-4">
+			<a href="/safety" class="nav-card border-destructive">
+				<p class="font-bold text-destructive mb-1">⚠️ Safety</p>
+				<p class="text-sm text-charcoal/70">Crisis resources, boundaries & support</p>
+			</a>
 
-        <div class="grid gap-4 mt-6">
-          <div class="glass-panel p-5 rounded-sm border-l-4 border-forest-green">
-            <p class="label-sm text-forest-green mb-2">What Ray Is</p>
-            <ul class="list-disc pl-4 space-y-2 text-sm">
-              <li>AI coaching that helps you recognize patterns</li>
-              <li>Voice-based (with text option)</li>
-              <li>Transparent about being AI</li>
-              <li>Available for any relationship type</li>
-              <li>Can work with two people at once</li>
-            </ul>
-          </div>
+			<a href="/about" class="nav-card border-forest-green">
+				<p class="font-bold text-charcoal mb-1">About Ray</p>
+				<p class="text-sm text-charcoal/70">What Ray is, FAQ & how it works</p>
+			</a>
 
-          <div class="glass-panel p-5 rounded-sm border-l-4 border-clay">
-            <p class="label-sm text-clay mb-2">What Ray Isn't</p>
-            <ul class="list-disc pl-4 space-y-2 text-sm">
-              <li>Therapy or mental health treatment</li>
-              <li>Crisis intervention</li>
-              <li>A replacement for professional support</li>
-              <li>Perfect or always right</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
+			<a href="/research" class="nav-card border-clay">
+				<p class="font-bold text-charcoal mb-1">The Research</p>
+				<p class="text-sm text-charcoal/70">Cultural foundations, research questions & what happens next</p>
+			</a>
 
-    <!-- FAQ Section -->
-    <section id="faq" class="scroll-mt-10">
-      <h3 class="heading-lg mb-6">Frequently Asked Questions</h3>
-      <div class="space-y-8">
-        
-        <div>
-          <h4 class="font-bold text-lg mb-2">What is Ray exactly?</h4>
-          <p class="body-text">Ray is a conversational AI relationship coach. You talk (or type), Ray responds. It's designed to help you think through what's going on in your relationships.</p>
-        </div>
+			<a href="/privacy" class="nav-card border-charcoal">
+				<p class="font-bold text-charcoal mb-1">Privacy & Timeline</p>
+				<p class="text-sm text-charcoal/70">Your data, your rights & key dates</p>
+			</a>
+		</nav>
 
-        <div>
-          <h4 class="font-bold text-lg mb-2">Is Ray a therapist?</h4>
-          <p class="body-text">No. Ray is coaching, not therapy. Ray can't treat mental health conditions. If you need professional support, Ray will help you recognize that.</p>
-        </div>
+		<!-- Why Your Voice Matters -->
+		<section class="mt-12 pt-10 border-t border-charcoal/10">
+			<h2 class="heading-lg mb-4">Why Your Voice Matters</h2>
+			<div class="body-text space-y-4">
+				<p>Most AI is designed without input from the people who'll actually use it for vulnerable conversations. You're helping design AI that centres relationality, dignity, and care — not just efficiency and verification.</p>
+				<p>Your feedback will directly influence:</p>
+				<ul class="list-disc pl-5 space-y-2 text-sm">
+					<li>Whether this approach to AI design actually works</li>
+					<li>What ethical frameworks are needed for conversational AI in vulnerable contexts</li>
+					<li>How to build AI that respects Māori and Pasifika values authentically</li>
+				</ul>
+			</div>
+		</section>
 
-        <div>
-          <h4 class="font-bold text-lg mb-2">Does Ray remember previous conversations?</h4>
-          <p class="body-text">No. For this pilot, each session starts fresh. Ray has no memory of what you've talked about before.</p>
-        </div>
+		<!-- Closing Message -->
+		<section class="mt-8 glass-panel p-6 rounded-sm border-l-4 border-clay">
+			<p class="body-text font-bold mb-2">Ngā mihi nui for participating in this mahi.</p>
+			<p class="body-text text-sm">Your voice matters, and the researcher is grateful for the opportunity to walk alongside you in this research.</p>
+		</section>
 
-        <div>
-          <h4 class="font-bold text-lg mb-2">How long are sessions?</h4>
-          <p class="body-text">Sessions are capped at 1 hour. Most sessions run 15-45 minutes. Use Ray as often as you like during the pilot.</p>
-        </div>
-        
-      </div>
-    </section>
-
-    <!-- SAFETY SECTION (Highlighted) -->
-    <section id="safety" class="scroll-mt-10 relative">
-      <div class="absolute inset-0 bg-destructive/5 -mx-6 sm:mx-0 transform -skew-y-1"></div>
-      <div class="relative py-6">
-        <h3 class="heading-lg text-destructive mb-6 flex items-center gap-2">
-          <span>⚠️</span> Safety Protocols
-        </h3>
-        
-        <div class="bg-white/80 p-6 rounded-sm border border-destructive/20 shadow-sm mb-6">
-          <p class="font-bold text-destructive mb-2">Crisis Detection</p>
-          <p class="body-text text-sm mb-4">
-            Ray cannot help in a crisis. If Ray detects signs of serious distress, it will stop the conversation, provide resources, and alert the researcher.
-          </p>
-          <p class="text-xs text-warm-grey">
-            *If you use Ray late at night and a crisis is detected, the researcher will be asleep and won't respond until morning.
-          </p>
-        </div>
-
-        <div class="space-y-4">
-            <p class="label-sm text-charcoal">24/7 Support Resources</p>
-            <a href="tel:1737" class="btn-secondary text-left justify-start gap-4">
-                <span class="font-bold">1737</span> Call or Text (24/7)
-            </a>
-            <a href="tel:0800543354" class="btn-secondary text-left justify-start gap-4">
-                <span class="font-bold">Lifeline</span> 0800 543 354
-            </a>
-            <a href="tel:111" class="btn-secondary text-left justify-start gap-4 border-destructive text-destructive hover:bg-destructive/5">
-                <span class="font-bold">Emergency</span> 111
-            </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- The Research & Cultural Foundations -->
-    <section id="research" class="scroll-mt-10">
-      <h3 class="heading-lg mb-6">The Research</h3>
-      <p class="body-text mb-6">
-        This Master's research asks: <em class="italic text-clay">can AI be designed ethically for vulnerable conversations?</em>
-      </p>
-
-      <div class="space-y-6">
-        <div class="glass-panel p-6 border-l-4 border-charcoal">
-            <h4 class="font-bold text-lg mb-4">Cultural Foundations</h4>
-            <div class="space-y-3">
-                <div>
-                    <span class="font-bold text-clay block">Vā</span>
-                    <span class="text-sm">The sacred relational space between people.</span>
-                </div>
-                <div>
-                    <span class="font-bold text-clay block">Utu Tūturu</span>
-                    <span class="text-sm">Enduring collective reciprocity.</span>
-                </div>
-                <div>
-                    <span class="font-bold text-clay block">Mana Motuhake</span>
-                    <span class="text-sm">Absolute data sovereignty.</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="mt-8">
-            <h4 class="font-bold text-lg mb-3">Why the Tūī?</h4>
-            <p class="body-text text-sm">
-                Ray's icon is a tūī. Tūī are direct, honest, and have a distinctive voice. They are grounded in place (Aotearoa), beautiful but not precious, and wise but approachable.
-            </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Privacy -->
-    <section id="privacy" class="scroll-mt-10 border-t border-charcoal/10 pt-10">
-      <h3 class="heading-lg mb-6">Privacy & Data</h3>
-      
-      <div class="space-y-4">
-        <div class="input-field bg-white/40">
-            <p class="font-bold text-sm mb-1">Who sees my data?</p>
-            <p class="text-sm">Only the researcher (Lian Passmore). Transcripts are stored securely in ElevenLabs.</p>
-        </div>
-        <div class="input-field bg-white/40">
-            <p class="font-bold text-sm mb-1">Can I delete it?</p>
-            <p class="text-sm">Yes. You can delete individual sessions or your entire account anytime during the pilot.</p>
-        </div>
-        <div class="input-field bg-white/40">
-            <p class="font-bold text-sm mb-1">Is it anonymous?</p>
-            <p class="text-sm">Yes. All data is anonymized (participant codes only).</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Timeline -->
-    <section id="timeline" class="scroll-mt-10 pt-10">
-        <h3 class="heading-lg mb-6">Timeline</h3>
-        <div class="space-y-0 border-l border-charcoal/20 ml-2">
-            
-            <div class="pl-6 pb-8 relative">
-                <div class="absolute -left-[5px] top-2 w-2.5 h-2.5 rounded-full bg-clay"></div>
-                <p class="font-bold">Now</p>
-                <p class="text-sm text-warm-grey">Account Created</p>
-            </div>
-
-            <div class="pl-6 pb-8 relative">
-                <div class="absolute -left-[5px] top-2 w-2.5 h-2.5 rounded-full bg-forest-green"></div>
-                <p class="font-bold">Feb 12, 2026</p>
-                <p class="text-sm text-warm-grey">Pilot Begins</p>
-            </div>
-
-            <div class="pl-6 pb-8 relative">
-                <div class="absolute -left-[5px] top-2 w-2.5 h-2.5 rounded-full bg-charcoal"></div>
-                <p class="font-bold">Feb 12-26</p>
-                <p class="text-sm text-warm-grey">Pilot Period (Feedback after each session)</p>
-            </div>
-
-            <div class="pl-6 relative">
-                <div class="absolute -left-[5px] top-2 w-2.5 h-2.5 rounded-full bg-charcoal/40"></div>
-                <p class="font-bold">March 1, 2026</p>
-                <p class="text-sm text-warm-grey">Deadline to withdraw</p>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- Footer / Contact -->
-    <footer id="contact" class="mt-12 bg-charcoal text-linen -mx-6 px-6 py-12 rounded-t-lg">
-        <h3 class="heading-lg text-linen mb-6">Contact</h3>
-        
-        <div class="space-y-6 text-sm">
-            <div>
-                <p class="label-sm text-white/50 mb-1">Researcher</p>
-                <p class="font-bold text-lg">Lian Passmore</p>
-                <a href="mailto:lianpassmore@gmail.com" class="block text-linen/80 underline decoration-linen/30">lianpassmore@gmail.com</a>
-                <a href="tel:0275668803" class="block text-linen/80">027 566 8803</a>
-            </div>
-
-            <div>
-                <p class="label-sm text-white/50 mb-1">Supervisor</p>
-                <p class="font-bold">Felix Scholz, AcademyEX</p>
-                <a href="mailto:mtf@academyex.com" class="block text-linen/80 underline decoration-linen/30">mtf@academyex.com</a>
-            </div>
-            
-            <div class="pt-8 border-t border-white/10">
-                <p class="text-xs text-white/40">
-                    Master of Technological Futures Candidate<br>
-                    Project RISE: Relational Insights for Systemic Empowerment
-                </p>
-            </div>
-        </div>
-    </footer>
-
-  </main>
+	</main>
 </Layout>

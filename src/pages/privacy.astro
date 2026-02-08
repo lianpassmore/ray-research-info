@@ -1,0 +1,147 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PageNav from '../components/PageNav.astro';
+---
+
+<Layout title="Privacy & Timeline - RAY" currentPage="Privacy">
+	<main class="space-y-16 pb-8 animate-fade-in">
+
+		<header>
+			<h1 class="heading-xl mb-2">Privacy & Your Data</h1>
+		</header>
+
+		<!-- What You Agreed To -->
+		<section>
+			<h2 class="heading-lg mb-4">What You Agreed To</h2>
+			<div class="body-text space-y-4">
+				<p>When you consented to participate, you agreed to:</p>
+				<ul class="list-disc pl-5 space-y-2 text-sm">
+					<li>Try Ray between February 12-26, 2026</li>
+					<li>Give quick feedback after each session (~3 minutes)</li>
+					<li>Complete a final reflection at the end (~15 minutes)</li>
+					<li>Allow the researcher to analyse broad themes across all participants</li>
+				</ul>
+
+				<p class="mt-4">You understood that:</p>
+				<ul class="list-disc pl-5 space-y-2 text-sm">
+					<li>Your conversations are private</li>
+					<li>Ray is coaching, not therapy</li>
+					<li>Ray can't help in a crisis</li>
+					<li>Sessions cap at 1 hour</li>
+					<li>Each session starts fresh with no memory</li>
+					<li>You can withdraw before March 1, 2026</li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- What Happens to Your Conversations -->
+		<section>
+			<h2 class="heading-lg mb-4">What Happens to Your Conversations</h2>
+			<div class="space-y-4">
+				<div class="input-field bg-white/40">
+					<p class="font-bold text-sm mb-1">Who sees my data?</p>
+					<p class="text-sm">Only the researcher (Lian Passmore). Transcripts are stored securely in ElevenLabs.</p>
+				</div>
+				<div class="input-field bg-white/40">
+					<p class="font-bold text-sm mb-1">Are conversations analysed?</p>
+					<p class="text-sm">The researcher might look across all transcripts to identify broad patterns (like common themes people discuss), but is not analysing your personal relationship content.</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- What You Control -->
+		<section>
+			<h2 class="heading-lg mb-4">What You Control</h2>
+			<div class="space-y-4">
+				<div class="input-field bg-white/40">
+					<p class="font-bold text-sm mb-1">Can I delete my data?</p>
+					<p class="text-sm">Yes. You can delete individual sessions or your entire account anytime during the pilot.</p>
+				</div>
+				<div class="input-field bg-white/40">
+					<p class="font-bold text-sm mb-1">Can I withdraw?</p>
+					<p class="text-sm">Yes. You can withdraw from the research completely before March 1, 2026. If you withdraw, all your data will be deleted and not used in the research.</p>
+				</div>
+				<div class="input-field bg-white/40">
+					<p class="font-bold text-sm mb-1">Is it anonymous?</p>
+					<p class="text-sm">Yes. All data is anonymised (participant codes only, no names).</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- How Your Data is Protected -->
+		<section>
+			<h2 class="heading-lg mb-4">How Your Data is Protected</h2>
+			<div class="glass-panel p-5 rounded-sm border-l-4 border-forest-green">
+				<ul class="list-disc pl-4 space-y-3 text-sm">
+					<li>All data is <strong>anonymised</strong> (participant codes only, no names)</li>
+					<li>Transcripts stored securely in ElevenLabs</li>
+					<li>If any reflections are quoted in the final project, <strong>you'll review them first</strong></li>
+					<li>Everything is <strong>permanently deleted</strong> 2 years after the project ends</li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- What the Researcher Will Do With Your Insights -->
+		<section>
+			<h2 class="heading-lg mb-4">What the Researcher Will Do With Your Insights</h2>
+			<div class="body-text space-y-3">
+				<p>Your reflections about using Ray will help shape the final Master's project and answer whether conversational AI can be designed ethically for vulnerable interactions.</p>
+				<p>The researcher will:</p>
+				<ul class="list-disc pl-5 space-y-2 text-sm">
+					<li>Analyse patterns across all participants to understand what works and what doesn't</li>
+					<li>Share anonymised findings in the final project (April 2026 submission)</li>
+					<li>Return findings to you — you'll receive a summary of what was learned</li>
+					<li>Present at academic conferences and potentially publish in journals (always anonymised)</li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- Timeline -->
+		<section class="border-t border-charcoal/10 pt-10">
+			<h2 class="heading-lg mb-6">Timeline</h2>
+			<div class="space-y-0 border-l border-charcoal/20 ml-2">
+
+				<div class="pl-6 pb-8 relative">
+					<div class="absolute -left-[5px] top-2 w-2.5 h-2.5 rounded-full bg-clay"></div>
+					<p class="font-bold">Now</p>
+					<p class="text-sm text-warm-grey">You've already consented and created your account</p>
+				</div>
+
+				<div class="pl-6 pb-8 relative">
+					<div class="absolute -left-[5px] top-2 w-2.5 h-2.5 rounded-full bg-forest-green"></div>
+					<p class="font-bold">Feb 12, 2026</p>
+					<p class="text-sm text-warm-grey">Pilot begins — use Ray anytime</p>
+				</div>
+
+				<div class="pl-6 pb-8 relative">
+					<div class="absolute -left-[5px] top-2 w-2.5 h-2.5 rounded-full bg-charcoal"></div>
+					<p class="font-bold">Feb 12-26</p>
+					<p class="text-sm text-warm-grey">Two-week pilot period</p>
+				</div>
+
+				<div class="pl-6 pb-8 relative">
+					<div class="absolute -left-[5px] top-2 w-2.5 h-2.5 rounded-full bg-clay"></div>
+					<p class="font-bold">After each session</p>
+					<p class="text-sm text-warm-grey">Quick feedback (~3 minutes)</p>
+				</div>
+
+				<div class="pl-6 pb-8 relative">
+					<div class="absolute -left-[5px] top-2 w-2.5 h-2.5 rounded-full bg-forest-green"></div>
+					<p class="font-bold">By Feb 26, 2026</p>
+					<p class="text-sm text-warm-grey">Final reflection with Ray (~15 minutes)</p>
+				</div>
+
+				<div class="pl-6 relative">
+					<div class="absolute -left-[5px] top-2 w-2.5 h-2.5 rounded-full bg-charcoal/40"></div>
+					<p class="font-bold">March 1, 2026</p>
+					<p class="text-sm text-warm-grey">Deadline to withdraw if you change your mind</p>
+				</div>
+
+			</div>
+		</section>
+
+		<PageNav
+			prev={{ href: "/research", label: "The Research" }}
+		/>
+	</main>
+</Layout>

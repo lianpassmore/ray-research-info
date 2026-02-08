@@ -1,0 +1,109 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PageNav from '../components/PageNav.astro';
+---
+
+<Layout title="Safety - RAY" currentPage="Safety">
+	<main class="space-y-12 pb-8 animate-fade-in">
+
+		<header>
+			<h1 class="heading-xl mb-2">Safety Protocols</h1>
+			<p class="body-text">Because Ray deals with vulnerable conversations, safety protocols are built in.</p>
+		</header>
+
+		<!-- Crisis Detection System -->
+		<section>
+			<h2 class="heading-lg mb-4">Crisis Detection System</h2>
+			<div class="bg-white/80 p-6 rounded-sm border border-destructive/20 shadow-sm">
+				<p class="body-text mb-4">
+					If Ray detects signs of serious distress — suicidal thoughts, self-harm, thoughts of harming others, abuse disclosures, or severe mental health crisis — three things happen:
+				</p>
+				<ol class="list-decimal pl-5 space-y-3 text-sm">
+					<li><strong>Ray stops the coaching conversation immediately</strong></li>
+					<li><strong>Ray provides crisis resources directly</strong></li>
+					<li><strong>Ray alerts the researcher</strong>, who will follow up as soon as possible</li>
+				</ol>
+				<div class="mt-4 p-4 bg-destructive/5 rounded-sm">
+					<p class="text-sm text-warm-grey">
+						<strong>Important:</strong> The researcher cannot guarantee a response within a specific timeframe. If you're using Ray late at night, the response will come the next morning. The crisis resources below are available 24/7 for immediate support.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Important Boundaries -->
+		<section>
+			<h2 class="heading-lg mb-4">Important Boundaries</h2>
+			<div class="space-y-3">
+				<div class="glass-panel p-4 rounded-sm border-l-4 border-clay">
+					<ul class="list-disc pl-4 space-y-2 text-sm">
+						<li>Ray is <strong>coaching, NOT therapy</strong></li>
+						<li>Ray <strong>cannot treat mental health conditions</strong></li>
+						<li>If you need therapy, Ray will help you recognise that and refer you</li>
+						<li>Crisis protocols are a <strong>safety net, not a replacement</strong> for professional help</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<!-- Crisis Resources -->
+		<section>
+			<h2 class="heading-lg mb-6">Crisis Resources (Always Available)</h2>
+			<p class="body-text text-sm mb-6">These resources are available 24/7 and are always visible in the app.</p>
+
+			<div class="space-y-6">
+				<!-- Mental Health Support -->
+				<div>
+					<p class="label-sm text-charcoal mb-3">Mental Health Support</p>
+					<div class="space-y-3">
+						<a href="tel:1737" class="btn-secondary text-left justify-start gap-4">
+							<span class="font-bold">1737</span> Call or Text (24/7)
+						</a>
+						<a href="tel:0800543354" class="btn-secondary text-left justify-start gap-4">
+							<span class="font-bold">Lifeline</span> 0800 543 354
+						</a>
+					</div>
+				</div>
+
+				<!-- Domestic Violence -->
+				<div>
+					<p class="label-sm text-charcoal mb-3">Domestic Violence</p>
+					<div class="space-y-3">
+						<a href="tel:0800733843" class="btn-secondary text-left justify-start gap-4">
+							<span class="font-bold">Women's Refuge</span> 0800 733 843
+						</a>
+					</div>
+				</div>
+
+				<!-- Emergency -->
+				<div>
+					<p class="label-sm text-charcoal mb-3">Emergency</p>
+					<div class="space-y-3">
+						<a href="tel:111" class="btn-secondary text-left justify-start gap-4 border-destructive text-destructive hover:bg-destructive/5">
+							<span class="font-bold">Emergency</span> 111
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Questions or Concerns -->
+		<section class="border-t border-charcoal/10 pt-10">
+			<h2 class="heading-lg mb-4">Questions or Concerns?</h2>
+			<div class="body-text space-y-4">
+				<p>If you have any questions about the pilot, Ray, or the research, please reach out anytime.</p>
+				<p>If something doesn't feel right, or if Ray's responses concern you, contact the researcher immediately.</p>
+				<div class="glass-panel p-5 rounded-sm border-l-4 border-clay mt-4">
+					<p class="font-bold">Lian Passmore</p>
+					<a href="mailto:lianpassmore@gmail.com" class="block text-sm text-clay underline">lianpassmore@gmail.com</a>
+					<a href="tel:0275668803" class="block text-sm text-clay">027 566 8803</a>
+				</div>
+			</div>
+		</section>
+
+		<PageNav
+			prev={{ href: "/", label: "Home" }}
+			next={{ href: "/about", label: "About Ray" }}
+		/>
+	</main>
+</Layout>

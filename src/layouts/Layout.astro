@@ -1,6 +1,20 @@
 ---
 // src/layouts/Layout.astro
 import '../styles/global.css';
+import Nav from '../components/Nav.astro';
+import ContactFooter from '../components/ContactFooter.astro';
+
+interface Props {
+	title?: string;
+	showNav?: boolean;
+	currentPage?: string;
+}
+
+const {
+	title = 'RAY - Participant Resource Guide',
+	showNav = true,
+	currentPage = '',
+} = Astro.props;
 ---
 
 <!doctype html>
@@ -8,10 +22,13 @@ import '../styles/global.css';
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Research Participant Info</title>
+		<meta name="description" content="RAY Research Pilot - Participant Resource Guide. February 12-26, 2026." />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<title>{title}</title>
 	</head>
-	<body class="page-container font-sans antialiased">
-		<!-- This <slot /> is where your page content gets injected -->
+	<body class:list={["page-container font-sans antialiased", { "pt-14": showNav }]}>
+		{showNav && <Nav currentPage={currentPage} />}
 		<slot />
+		<ContactFooter />
 	</body>
 </html>

@@ -1,0 +1,165 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PageNav from '../components/PageNav.astro';
+---
+
+<Layout title="About Ray - RAY" currentPage="About">
+	<main class="space-y-16 pb-8 animate-fade-in">
+
+		<!-- About Section -->
+		<section>
+			<h1 class="heading-xl mb-6">About Ray</h1>
+			<div class="body-text space-y-4">
+				<p>
+					Ray is an AI relationship coach built as part of a Master's research project exploring whether AI can be designed ethically for vulnerable conversations.
+				</p>
+				<p>
+					Ray works with any relationship: romantic, family, friends, work, yourself. It helps you see patterns you might be stuck in.
+				</p>
+
+				<div class="grid gap-4 mt-6">
+					<div class="glass-panel p-5 rounded-sm border-l-4 border-forest-green">
+						<p class="label-sm text-forest-green mb-2">What Ray Is</p>
+						<ul class="list-disc pl-4 space-y-2 text-sm">
+							<li>AI coaching that helps you recognise patterns and make decisions</li>
+							<li>Voice-based (with text option)</li>
+							<li>Transparent about being AI — never pretends to be human</li>
+							<li>Available for any relationship type</li>
+							<li>Can work with two people at once (you and a partner, friend, family member)</li>
+						</ul>
+					</div>
+
+					<div class="glass-panel p-5 rounded-sm border-l-4 border-clay">
+						<p class="label-sm text-clay mb-2">What Ray Isn't</p>
+						<ul class="list-disc pl-4 space-y-2 text-sm">
+							<li>Therapy or mental health treatment</li>
+							<li>Crisis intervention</li>
+							<li>A replacement for professional support</li>
+							<li>Perfect or always right</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- FAQ Section -->
+		<section>
+			<h2 class="heading-lg mb-8">Frequently Asked Questions</h2>
+			<div class="space-y-8">
+
+				<div>
+					<h3 class="font-bold text-lg mb-2">What is Ray exactly?</h3>
+					<p class="body-text">Ray is a conversational AI relationship coach. You talk (or type), Ray responds. It's designed to help you think through what's going on in your relationships — patterns you might not see on your own, dynamics that keep showing up, or decisions you're wrestling with.</p>
+				</div>
+
+				<div>
+					<h3 class="font-bold text-lg mb-2">Is Ray a therapist?</h3>
+					<p class="body-text">No. Ray is coaching, not therapy. Ray can't treat mental health conditions or provide crisis intervention. If you need professional support, Ray will help you recognise that and point you to the right place.</p>
+				</div>
+
+				<div>
+					<h3 class="font-bold text-lg mb-2">Can I use Ray with someone else?</h3>
+					<p class="body-text">Yes. You can have a session alone, or with a partner, friend, or family member present. Ray can work with both of you at once.</p>
+				</div>
+
+				<div>
+					<h3 class="font-bold text-lg mb-2">Does Ray remember previous conversations?</h3>
+					<p class="body-text">No. For this pilot, each session starts fresh. Ray has no memory of what you've talked about before. Part of the research is learning whether that fresh-start approach feels helpful or limiting.</p>
+				</div>
+
+				<div>
+					<h3 class="font-bold text-lg mb-2">How long are sessions?</h3>
+					<p class="body-text">Sessions are capped at 1 hour, but you decide how long you engage. Most sessions run 15-45 minutes. Use Ray as often as you like during the pilot.</p>
+				</div>
+
+				<div>
+					<h3 class="font-bold text-lg mb-2">What if I'm in crisis?</h3>
+					<div class="body-text space-y-3">
+						<p>Ray can't help in a crisis. If Ray detects signs of serious distress, it will:</p>
+						<ol class="list-decimal pl-5 space-y-1 text-sm">
+							<li>Stop the coaching conversation immediately</li>
+							<li>Provide crisis resources directly</li>
+							<li>Alert the researcher</li>
+						</ol>
+						<div class="glass-panel p-4 rounded-sm border-l-4 border-destructive mt-3">
+							<p class="text-sm"><strong>Crisis resources are always available:</strong></p>
+							<p class="text-sm mt-1"><strong>1737</strong> — Call or text, 24/7</p>
+							<p class="text-sm"><strong>Lifeline:</strong> 0800 543 354</p>
+							<p class="text-sm"><strong>Emergency:</strong> 111</p>
+						</div>
+						<p class="text-sm text-warm-grey">
+							<strong>Important:</strong> If you use Ray late at night and a crisis is detected, the researcher will be asleep and won't respond until morning. The resources above are available 24/7.
+						</p>
+					</div>
+				</div>
+
+				<div>
+					<h3 class="font-bold text-lg mb-2">Do I need to be tech-savvy?</h3>
+					<p class="body-text">No. If you can have a phone conversation, you can use Ray. It's as simple as talking and listening.</p>
+				</div>
+
+				<div>
+					<h3 class="font-bold text-lg mb-2">Can I use text instead of voice?</h3>
+					<p class="body-text">Yes. Ray works via voice or text — your choice.</p>
+				</div>
+
+				<div>
+					<h3 class="font-bold text-lg mb-2">What to expect from Ray</h3>
+					<p class="body-text">Ray is transparent about being AI — it never pretends to be human. It's helpful for recognising patterns and making decisions, but it's not perfect or always right.</p>
+					<p class="body-text mt-2">Ray might challenge you. That's intentional. The goal isn't to make you feel good — it's to help you see clearly.</p>
+				</div>
+
+				<div>
+					<h3 class="font-bold text-lg mb-2">A note on connection</h3>
+					<div class="body-text space-y-3">
+						<p>Ray is designed to be a helpful thinking partner — like a mate on the back porch who'll listen while you talk things through. It's not a substitute for the real relationships in your life.</p>
+						<p>Some people find these kinds of conversations easy to lean into, and that's okay. Just know that Ray is a tool to support your thinking, not a relationship in itself.</p>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<!-- Why the Tui -->
+		<section class="border-t border-charcoal/10 pt-10">
+			<h2 class="heading-lg mb-6">Why the Tūī?</h2>
+			<div class="body-text space-y-4">
+				<p>Ray's icon is a tūī — a native New Zealand bird known for its bold, honest presence and distinctive voice.</p>
+
+				<div class="space-y-6 mt-6">
+					<div>
+						<p class="font-bold text-clay mb-1">Direct and honest.</p>
+						<p class="text-sm">Tūī are confident, sometimes cheeky birds. They don't hide. Ray works the same way — it doesn't soften hard truths or tell you what you want to hear. It helps you see clearly.</p>
+					</div>
+
+					<div>
+						<p class="font-bold text-clay mb-1">Distinctive voice.</p>
+						<p class="text-sm">Tūī are known for their complex, varied calls — layered, unmistakable, sometimes beautiful, sometimes strange. Ray is voice-first because vulnerable conversations need the texture and nuance that voice carries.</p>
+					</div>
+
+					<div>
+						<p class="font-bold text-clay mb-1">Grounded in place.</p>
+						<p class="text-sm">Tūī are native to Aotearoa and culturally significant in Māori worldviews. They appear in whakataukī (proverbs) about truth-telling and clarity, and are associated with communication and voice. Ray is built on the same grounding — Māori and Pasifika values as foundation, not decoration.</p>
+					</div>
+
+					<div>
+						<p class="font-bold text-clay mb-1">Beautiful but not precious.</p>
+						<p class="text-sm">Tūī are striking birds with their white throat tuft, but they're scrappy, common garden birds. You see them in parks, backyards, cities. They're not rare or distant. Ray is designed the same way — accessible and everyday, something you can turn to when you need it, not something you admire from afar.</p>
+					</div>
+
+					<div>
+						<p class="font-bold text-clay mb-1">Wise but approachable.</p>
+						<p class="text-sm">Tūī are common enough to feel familiar, yet they carry mana. They're respected in Māori culture without being overly sacred or tapu. Ray holds that same balance — grounded in cultural values, designed to be used, not revered from a distance.</p>
+					</div>
+				</div>
+
+				<p class="text-sm text-warm-grey mt-6 italic">The tūī isn't just a logo. It's a signal about how this AI was built and what it's here to do.</p>
+			</div>
+		</section>
+
+		<PageNav
+			prev={{ href: "/safety", label: "Safety" }}
+			next={{ href: "/research", label: "The Research" }}
+		/>
+	</main>
+</Layout>

@@ -77,6 +77,14 @@ Let's go with a solid, slightly translucent box for readability.
 .glass-panel {
 @apply bg-linen/95 backdrop-blur-md border-l border-charcoal/10;
 }
+/* Sticky navigation bar */
+.nav-bar {
+@apply fixed top-0 left-0 right-0 z-50 bg-linen/95 backdrop-blur-md border-b border-charcoal/10 px-6 py-3 flex items-center justify-between max-w-md mx-auto;
+}
+/* Navigation card for home page */
+.nav-card {
+@apply bg-linen/95 backdrop-blur-md border-l border-charcoal/10 p-5 rounded-sm border-l-4 block transition-all duration-200 hover:bg-white/60 active:scale-[0.98];
+}
 }
 /* KEYFRAMES */
 @keyframes fadeIn {
