@@ -22,11 +22,11 @@ const pages = [
 				href={page.href}
 				class:list={[
 					"text-xs font-bold uppercase tracking-wide transition-colors",
-					page.label === 'Safety' ? "text-destructive hover:text-destructive/70" :
-					currentPage === page.label ? "text-clay" : "text-charcoal/50 hover:text-charcoal",
+					page.label === 'Safety' ? "text-clay hover:text-clay/70" :
+					currentPage === page.label ? "text-charcoal" : "text-warm-grey hover:text-charcoal",
 				]}
 			>
-				{page.label === 'Safety' && '⚠️ '}{page.label}
+				{page.label}
 			</a>
 		))}
 	</div>

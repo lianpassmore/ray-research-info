@@ -38,13 +38,32 @@ import PageNav from '../components/PageNav.astro';
 		<section>
 			<h2 class="heading-lg mb-4">What Happens to Your Conversations</h2>
 			<div class="space-y-4">
-				<div class="input-field bg-white/40">
-					<p class="font-bold text-sm mb-1">Who sees my data?</p>
-					<p class="text-sm">Only the researcher (Lian Passmore). Transcripts are stored securely in ElevenLabs.</p>
+				<div class="glass-panel p-5 rounded-sm border-l-4 border-forest-green mb-4">
+					<p class="font-bold text-sm mb-2">The researcher will NOT read your session transcripts.</p>
+					<p class="text-sm">Your conversations with Ray are private. The researcher does not read through what you talked about.</p>
 				</div>
 				<div class="input-field bg-white/40">
-					<p class="font-bold text-sm mb-1">Are conversations analysed?</p>
-					<p class="text-sm">The researcher might look across all transcripts to identify broad patterns (like common themes people discuss), but is not analysing your personal relationship content.</p>
+					<p class="font-bold text-sm mb-1">So what happens to my transcripts?</p>
+					<p class="text-sm">Transcripts are stored securely in ElevenLabs. Before any analysis, AI is used to strip out all personal details (names, places, identifying info). Each participant is then assigned a number — the researcher never sees your name attached to a transcript.</p>
+				</div>
+				<div class="input-field bg-white/40">
+					<p class="font-bold text-sm mb-1">What kind of analysis is done?</p>
+					<p class="text-sm">Only high-level aggregate analysis across all participants — broad themes, common topics, and patterns. The researcher is not reading or analysing your personal relationship content.</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Feedback & Reflections -->
+		<section>
+			<h2 class="heading-lg mb-4">Feedback & Reflections</h2>
+			<div class="space-y-4">
+				<div class="glass-panel p-5 rounded-sm border-l-4 border-clay">
+					<p class="font-bold text-sm mb-2">Your feedback and reflections are different from your session transcripts.</p>
+					<p class="text-sm">The researcher <strong>will</strong> read your post-session feedback and final reflections, and will know who submitted them. This is so the researcher can understand your experience of using Ray.</p>
+				</div>
+				<div class="input-field bg-white/40">
+					<p class="font-bold text-sm mb-1">What if the researcher wants to quote me?</p>
+					<p class="text-sm">If the researcher wants to use a quote from your reflections in the final findings, <strong>they will check with you first</strong>. Nothing is quoted without your permission, and all quotes are anonymised.</p>
 				</div>
 			</div>
 		</section>
@@ -73,9 +92,10 @@ import PageNav from '../components/PageNav.astro';
 			<h2 class="heading-lg mb-4">How Your Data is Protected</h2>
 			<div class="glass-panel p-5 rounded-sm border-l-4 border-forest-green">
 				<ul class="list-disc pl-4 space-y-3 text-sm">
-					<li>All data is <strong>anonymised</strong> (participant codes only, no names)</li>
+					<li><strong>Session transcripts</strong> are anonymised by AI (personal details removed) and assigned a participant number — the researcher never reads them directly</li>
+					<li>Only <strong>high-level aggregate analysis</strong> is done on transcripts (themes, topics, patterns)</li>
+					<li><strong>Feedback and reflections</strong> are read by the researcher, but any quotes require your permission first</li>
 					<li>Transcripts stored securely in ElevenLabs</li>
-					<li>If any reflections are quoted in the final project, <strong>you'll review them first</strong></li>
 					<li>Everything is <strong>permanently deleted</strong> 2 years after the project ends</li>
 				</ul>
 			</div>
@@ -88,10 +108,12 @@ import PageNav from '../components/PageNav.astro';
 				<p>Your reflections about using Ray will help shape the final Master's project and answer whether conversational AI can be designed ethically for vulnerable interactions.</p>
 				<p>The researcher will:</p>
 				<ul class="list-disc pl-5 space-y-2 text-sm">
-					<li>Analyse patterns across all participants to understand what works and what doesn't</li>
+					<li>Run high-level aggregate analysis on anonymised transcripts (themes, topics, patterns across all participants)</li>
+					<li>Read your feedback and reflections to understand your experience</li>
 					<li>Share anonymised findings in the final project (April 2026 submission)</li>
 					<li>Return findings to you — you'll receive a summary of what was learned</li>
 					<li>Present at academic conferences and potentially publish in journals (always anonymised)</li>
+					<li>Check with you before quoting any of your reflections</li>
 				</ul>
 			</div>
 		</section>
