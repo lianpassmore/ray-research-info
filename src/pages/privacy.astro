@@ -47,6 +47,10 @@ import PageNav from '../components/PageNav.astro';
 					<p class="text-sm">Transcripts are stored securely in ElevenLabs. Before any analysis, AI is used to strip out all personal details (names, places, identifying info). Each participant is then assigned a number — the researcher never sees your name attached to a transcript.</p>
 				</div>
 				<div class="input-field bg-white/40">
+					<p class="font-bold text-sm mb-1">Is my voice data classified as biometric data?</p>
+					<p class="text-sm">Under some laws, your voice data may be classified as biometric information. ElevenLabs uses this data solely for verification and voice modelling — never for profiling or targeting.</p>
+				</div>
+				<div class="input-field bg-white/40">
 					<p class="font-bold text-sm mb-1">What kind of analysis is done?</p>
 					<p class="text-sm">Only high-level aggregate analysis across all participants — broad themes, common topics, and patterns. The researcher is not reading or analysing your personal relationship content.</p>
 				</div>
@@ -81,6 +85,10 @@ import PageNav from '../components/PageNav.astro';
 					<p class="text-sm">Yes. You can withdraw from the research completely before March 1, 2026. If you withdraw, all your data will be deleted and not used in the research.</p>
 				</div>
 				<div class="input-field bg-white/40">
+					<p class="font-bold text-sm mb-1">Can I opt out of AI training?</p>
+					<p class="text-sm">Yes. You can prevent ElevenLabs from using your voice data to train their AI models. This doesn't affect Ray's research use.</p>
+				</div>
+				<div class="input-field bg-white/40">
 					<p class="font-bold text-sm mb-1">Is it anonymous?</p>
 					<p class="text-sm">Yes. All data is anonymised (participant codes only, no names).</p>
 				</div>
@@ -95,9 +103,46 @@ import PageNav from '../components/PageNav.astro';
 					<li><strong>Session transcripts</strong> are anonymised by AI (personal details removed) and assigned a participant number — the researcher never reads them directly</li>
 					<li>Only <strong>high-level aggregate analysis</strong> is done on transcripts (themes, topics, patterns)</li>
 					<li><strong>Feedback and reflections</strong> are read by the researcher, but any quotes require your permission first</li>
-					<li>Transcripts stored securely in ElevenLabs</li>
-					<li>Everything is <strong>permanently deleted</strong> 2 years after the project ends</li>
+					<li>Transcripts stored securely in ElevenLabs' systems (US, Netherlands, Singapore) — all data transfers to the United States for storage</li>
+					<li><strong>Voice data retention:</strong> ElevenLabs stores voice recordings for up to 3 years after your last interaction, unless you request deletion sooner</li>
+					<li><strong>Safety monitoring:</strong> ElevenLabs may monitor conversations for safety and fraud prevention, and may share content with third-party moderators to maintain platform safety</li>
+					<li>Research data is <strong>permanently deleted</strong> 2 years after the project ends</li>
 				</ul>
+			</div>
+		</section>
+
+		<!-- ElevenLabs Platform & Data Handling -->
+		<section>
+			<h2 class="heading-lg mb-4">ElevenLabs Platform & Data Handling</h2>
+			<div class="space-y-4">
+				<div class="glass-panel p-5 rounded-sm border-l-4 border-clay mb-4">
+					<p class="font-bold text-sm mb-2">Ray is built on ElevenLabs' voice technology. Here's what that means for your data.</p>
+					<p class="text-sm">ElevenLabs processes your voice data under their Terms of Service and Privacy Policy, in addition to Ray's research protocols.</p>
+				</div>
+
+				<div class="input-field bg-white/40">
+					<p class="font-bold text-sm mb-1">What ElevenLabs does with your voice</p>
+					<ul class="list-disc pl-4 space-y-2 text-sm">
+						<li>Stores your voice recordings for up to <strong>3 years</strong> after your last session (unless you request deletion sooner)</li>
+						<li>May classify your voice as <strong>biometric data</strong> under certain laws — used solely for verification and voice modelling, never for profiling or targeting</li>
+						<li>Uses voice data to provide Ray's services and may use it to improve their AI models (<strong>you can opt out</strong> of training use)</li>
+						<li>Monitors content for <strong>safety and fraud prevention</strong> — in certain cases, may share content with third-party moderators</li>
+						<li>Stores data in the <strong>US, Netherlands, and Singapore</strong> (all data transfers to the United States for storage)</li>
+					</ul>
+				</div>
+
+				<div class="input-field bg-white/40">
+					<p class="font-bold text-sm mb-1">Your ElevenLabs rights</p>
+					<ul class="list-disc pl-4 space-y-2 text-sm">
+						<li>Request deletion of your voice data anytime</li>
+						<li>Opt out of AI training use</li>
+						<li>Access, correct, or restrict processing of your data</li>
+					</ul>
+				</div>
+
+				<div class="glass-panel p-5 rounded-sm border-l-4 border-charcoal/40">
+					<p class="text-sm"><strong>Two layers of data control:</strong> The researcher controls how your conversation content is used for research purposes. ElevenLabs controls the technical processing and storage of your voice recordings. Ray's research data sovereignty protocols are separate from ElevenLabs' platform policies.</p>
+				</div>
 			</div>
 		</section>
 
