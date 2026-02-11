@@ -86,6 +86,46 @@ Let's go with a solid, slightly translucent box for readability.
 @apply bg-linen/95 backdrop-blur-md border-l border-charcoal/10 p-5 rounded-sm border-l-4 block transition-all duration-200 hover:bg-white/60 active:scale-[0.98];
 }
 }
+/* Responsive Accordion: collapsed on mobile, expanded on desktop */
+details.accordion-item {
+  border-radius: 2px;
+  transition: background-color 0.2s;
+}
+details.accordion-item > summary {
+  list-style: none;
+  cursor: pointer;
+  position: relative;
+  padding-right: 1.5rem;
+}
+details.accordion-item > summary::-webkit-details-marker {
+  display: none;
+}
+details.accordion-item > summary::marker {
+  display: none;
+  content: '';
+}
+details.accordion-item > summary::after {
+  content: '+';
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-weight: bold;
+  font-size: 1rem;
+  color: var(--color-warm-grey);
+  transition: transform 0.2s;
+}
+details.accordion-item[open] > summary::after {
+  content: '−';
+}
+@media (min-width: 768px) {
+  details.accordion-item > summary {
+    pointer-events: none;
+    padding-right: 0;
+  }
+  details.accordion-item > summary::after {
+    display: none;
+  }
+}
 /* KEYFRAMES */
 @keyframes fadeIn {
 from { opacity: 0; transform: translateY(10px); }

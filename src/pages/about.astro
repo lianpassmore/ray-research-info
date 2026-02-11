@@ -45,41 +45,41 @@ import PageNav from '../components/PageNav.astro';
 		<!-- FAQ Section -->
 		<section>
 			<h2 class="heading-lg mb-8">Frequently Asked Questions</h2>
-			<div class="space-y-8">
+			<div class="space-y-4">
 
-				<div>
-					<h3 class="font-bold text-lg mb-2">What is Ray exactly?</h3>
-					<p class="body-text">Ray is a conversational AI relationship coach. You talk (or type), Ray responds. It's designed to help you think through what's going on in your relationships — patterns you might not see on your own, dynamics that keep showing up, or decisions you're wrestling with.</p>
-				</div>
+				<details class="accordion-item input-field bg-white/40">
+					<summary class="font-bold text-lg">What is Ray exactly?</summary>
+					<p class="body-text mt-3">Ray is a conversational AI relationship coach. You talk (or type), Ray responds. It's designed to help you think through what's going on in your relationships — patterns you might not see on your own, dynamics that keep showing up, or decisions you're wrestling with.</p>
+				</details>
 
-				<div>
-					<h3 class="font-bold text-lg mb-2">Is Ray a therapist?</h3>
-					<p class="body-text">No. Ray is coaching, not therapy. Ray can't treat mental health conditions or provide crisis intervention. If you need professional support, Ray will help you recognise that and point you to the right place.</p>
-				</div>
+				<details class="accordion-item input-field bg-white/40">
+					<summary class="font-bold text-lg">Is Ray a therapist?</summary>
+					<p class="body-text mt-3">No. Ray is coaching, not therapy. Ray can't treat mental health conditions or provide crisis intervention. If you need professional support, Ray will help you recognise that and point you to the right place.</p>
+				</details>
 
-				<div>
-					<h3 class="font-bold text-lg mb-2">Can I use Ray with someone else?</h3>
-					<p class="body-text">Yes. You can have a session alone, or with a partner, friend, or family member present. Ray can work with both of you at once.</p>
-				</div>
+				<details class="accordion-item input-field bg-white/40">
+					<summary class="font-bold text-lg">Can I use Ray with someone else?</summary>
+					<p class="body-text mt-3">Yes. You can have a session alone, or with a partner, friend, or family member present. Ray can work with both of you at once.</p>
+				</details>
 
-				<div>
-					<h3 class="font-bold text-lg mb-2">Does Ray remember previous conversations?</h3>
-					<div class="body-text space-y-3">
+				<details class="accordion-item input-field bg-white/40">
+					<summary class="font-bold text-lg">Does Ray remember previous conversations?</summary>
+					<div class="body-text space-y-3 mt-3">
 						<p>Each session starts fresh — Ray doesn't remember what you talked about in previous sessions.</p>
 						<p>However, if you fill in the <strong>"Help Ray know you"</strong> form (in the menu), Ray will know your context at the start of every session — things like your relationship status, partner's name, or living situation. This means you don't have to re-explain the basics each time.</p>
 						<p>Ray also knows how many sessions you've had and when your last one was, so it can pick up naturally.</p>
 						<p class="text-sm text-warm-grey"><strong>What's the difference?</strong> Ray knows <em>who you are</em> (context you've shared) but not <em>what you've said</em> (previous conversation content). Part of the research is learning how this fresh-start approach feels.</p>
 					</div>
-				</div>
+				</details>
 
-				<div>
-					<h3 class="font-bold text-lg mb-2">How long are sessions?</h3>
-					<p class="body-text">Sessions are capped at 45 minutes. Ray will give you a heads-up when you're getting close to the limit so you're not cut off mid-conversation. Use Ray as often as you like during the pilot.</p>
-				</div>
+				<details class="accordion-item input-field bg-white/40">
+					<summary class="font-bold text-lg">How long are sessions?</summary>
+					<p class="body-text mt-3">Sessions are capped at 45 minutes. Ray will give you a heads-up when you're getting close to the limit so you're not cut off mid-conversation. Use Ray as often as you like during the pilot.</p>
+				</details>
 
-				<div>
-					<h3 class="font-bold text-lg mb-2">What if I'm in crisis?</h3>
-					<div class="body-text space-y-3">
+				<details class="accordion-item input-field bg-white/40">
+					<summary class="font-bold text-lg">What if I'm in crisis?</summary>
+					<div class="body-text space-y-3 mt-3">
 						<p>Ray can't help in a crisis. If Ray detects signs of serious distress, it will:</p>
 						<ol class="list-decimal pl-5 space-y-1 text-sm">
 							<li>Stop the coaching conversation immediately</li>
@@ -96,31 +96,33 @@ import PageNav from '../components/PageNav.astro';
 							<strong>Important:</strong> If you use Ray late at night and a crisis is detected, the researcher will be asleep and won't respond until morning. The resources above are available 24/7.
 						</p>
 					</div>
-				</div>
+				</details>
 
-				<div>
-					<h3 class="font-bold text-lg mb-2">Do I need to be tech-savvy?</h3>
-					<p class="body-text">No. If you can have a phone conversation, you can use Ray. It's as simple as talking and listening.</p>
-				</div>
+				<details class="accordion-item input-field bg-white/40">
+					<summary class="font-bold text-lg">Do I need to be tech-savvy?</summary>
+					<p class="body-text mt-3">No. If you can have a phone conversation, you can use Ray. It's as simple as talking and listening.</p>
+				</details>
 
-				<div>
-					<h3 class="font-bold text-lg mb-2">Can I use text instead of voice?</h3>
-					<p class="body-text">Yes. Ray works via voice or text — your choice.</p>
-				</div>
+				<details class="accordion-item input-field bg-white/40">
+					<summary class="font-bold text-lg">Can I use text instead of voice?</summary>
+					<p class="body-text mt-3">Yes. Ray works via voice or text — your choice.</p>
+				</details>
 
-				<div>
-					<h3 class="font-bold text-lg mb-2">What to expect from Ray</h3>
-					<p class="body-text">Ray is transparent about being AI — it never pretends to be human. It's helpful for recognising patterns and making decisions, but it won't be perfect. It might misread a situation, miss something important, or get things wrong. That's part of the process — and part of what this research is exploring.</p>
-					<p class="body-text mt-2">Ray might challenge you. That's intentional. The goal isn't to make you feel good — it's to help you see clearly.</p>
-				</div>
+				<details class="accordion-item input-field bg-white/40">
+					<summary class="font-bold text-lg">What to expect from Ray</summary>
+					<div class="body-text space-y-3 mt-3">
+						<p>Ray is transparent about being AI — it never pretends to be human. It's helpful for recognising patterns and making decisions, but it won't be perfect. It might misread a situation, miss something important, or get things wrong. That's part of the process — and part of what this research is exploring.</p>
+						<p>Ray might challenge you. That's intentional. The goal isn't to make you feel good — it's to help you see clearly.</p>
+					</div>
+				</details>
 
-				<div>
-					<h3 class="font-bold text-lg mb-2">A note on connection</h3>
-					<div class="body-text space-y-3">
+				<details class="accordion-item input-field bg-white/40">
+					<summary class="font-bold text-lg">A note on connection</summary>
+					<div class="body-text space-y-3 mt-3">
 						<p>Ray is designed to be a helpful thinking partner — like a mate on the back porch who'll listen while you talk things through. It's not a substitute for the real relationships in your life.</p>
 						<p>Some people find these kinds of conversations easy to lean into, and that's okay. Just know that Ray is a tool to support your thinking, not a relationship in itself.</p>
 					</div>
-				</div>
+				</details>
 
 			</div>
 		</section>

@@ -30,5 +30,15 @@ const {
 		{showNav && <Nav currentPage={currentPage} />}
 		<slot />
 		<ContactFooter />
+		<script>
+			function syncAccordions(mq: MediaQueryList | MediaQueryListEvent) {
+				document.querySelectorAll<HTMLDetailsElement>('details.accordion-item').forEach(d => {
+					d.open = mq.matches;
+				});
+			}
+			const mq = window.matchMedia('(min-width: 768px)');
+			syncAccordions(mq);
+			mq.addEventListener('change', syncAccordions);
+		</script>
 	</body>
 </html>

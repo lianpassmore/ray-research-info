@@ -42,18 +42,18 @@ import PageNav from '../components/PageNav.astro';
 					<p class="font-bold text-sm mb-2">The researcher will NOT read your session transcripts.</p>
 					<p class="text-sm">Your conversations with Ray are private. The researcher does not read through what you talked about.</p>
 				</div>
-				<div class="input-field bg-white/40">
-					<p class="font-bold text-sm mb-1">So what happens to my transcripts?</p>
-					<p class="text-sm">Transcripts are stored securely in ElevenLabs. Before any analysis, AI is used to strip out all personal details (names, places, identifying info). Each participant is then assigned a number — the researcher never sees your name attached to a transcript.</p>
-				</div>
-				<div class="input-field bg-white/40">
-					<p class="font-bold text-sm mb-1">Is my voice data classified as biometric data?</p>
-					<p class="text-sm">Under some laws, your voice data may be classified as biometric information. ElevenLabs uses this data solely for verification and voice modelling — never for profiling or targeting.</p>
-				</div>
-				<div class="input-field bg-white/40">
-					<p class="font-bold text-sm mb-1">What kind of analysis is done?</p>
-					<p class="text-sm">Only high-level aggregate analysis across all participants — broad themes, common topics, and patterns. The researcher is not reading or analysing your personal relationship content.</p>
-				</div>
+				<details class="accordion-item input-field bg-white/40">
+					<summary class="font-bold text-sm">So what happens to my transcripts?</summary>
+					<p class="text-sm mt-2">Transcripts are stored securely in ElevenLabs. Before any analysis, AI is used to strip out all personal details (names, places, identifying info). Each participant is then assigned a number — the researcher never sees your name attached to a transcript.</p>
+				</details>
+				<details class="accordion-item input-field bg-white/40">
+					<summary class="font-bold text-sm">Is my voice data classified as biometric data?</summary>
+					<p class="text-sm mt-2">Under some laws, your voice data may be classified as biometric information. ElevenLabs uses this data solely for verification and voice modelling — never for profiling or targeting.</p>
+				</details>
+				<details class="accordion-item input-field bg-white/40">
+					<summary class="font-bold text-sm">What kind of analysis is done?</summary>
+					<p class="text-sm mt-2">Only high-level aggregate analysis across all participants — broad themes, common topics, and patterns. The researcher is not reading or analysing your personal relationship content.</p>
+				</details>
 			</div>
 		</section>
 
@@ -65,22 +65,22 @@ import PageNav from '../components/PageNav.astro';
 					<p class="font-bold text-sm mb-2">This is profile data you choose to share — not a transcript, not AI-generated.</p>
 					<p class="text-sm">It's the same category as your display name. You control what goes in, and you can change or delete it anytime.</p>
 				</div>
-				<div class="input-field bg-white/40">
-					<p class="font-bold text-sm mb-1">What is it?</p>
-					<p class="text-sm">A form in the menu where you can optionally share context about yourself — relationship status, partner's name, children, occupation, living situation, or anything else you think would help. All fields are optional.</p>
-				</div>
-				<div class="input-field bg-white/40">
-					<p class="font-bold text-sm mb-1">What does Ray do with it?</p>
-					<p class="text-sm">Ray receives your context at the start of each session so it doesn't have to ask you the basics every time. Ray also knows your session number, when your last session was, and how many days it's been — so it can pick up naturally.</p>
-				</div>
-				<div class="input-field bg-white/40">
-					<p class="font-bold text-sm mb-1">Is this the same as Ray remembering conversations?</p>
-					<p class="text-sm">No. Ray still doesn't remember what you talked about. It only knows the context you've explicitly shared in your profile. Each conversation still starts fresh.</p>
-				</div>
-				<div class="input-field bg-white/40">
-					<p class="font-bold text-sm mb-1">Can I change or delete it?</p>
-					<p class="text-sm">Yes. You can edit or clear your profile context anytime from the menu. If you delete it, Ray goes back to knowing nothing about you beyond your name.</p>
-				</div>
+				<details class="accordion-item input-field bg-white/40">
+					<summary class="font-bold text-sm">What is it?</summary>
+					<p class="text-sm mt-2">A form in the menu where you can optionally share context about yourself — relationship status, partner's name, children, occupation, living situation, or anything else you think would help. All fields are optional.</p>
+				</details>
+				<details class="accordion-item input-field bg-white/40">
+					<summary class="font-bold text-sm">What does Ray do with it?</summary>
+					<p class="text-sm mt-2">Ray receives your context at the start of each session so it doesn't have to ask you the basics every time. Ray also knows your session number, when your last session was, and how many days it's been — so it can pick up naturally.</p>
+				</details>
+				<details class="accordion-item input-field bg-white/40">
+					<summary class="font-bold text-sm">Is this the same as Ray remembering conversations?</summary>
+					<p class="text-sm mt-2">No. Ray still doesn't remember what you talked about. It only knows the context you've explicitly shared in your profile. Each conversation still starts fresh.</p>
+				</details>
+				<details class="accordion-item input-field bg-white/40">
+					<summary class="font-bold text-sm">Can I change or delete it?</summary>
+					<p class="text-sm mt-2">Yes. You can edit or clear your profile context anytime from the menu. If you delete it, Ray goes back to knowing nothing about you beyond your name.</p>
+				</details>
 			</div>
 		</section>
 
@@ -92,10 +92,10 @@ import PageNav from '../components/PageNav.astro';
 					<p class="font-bold text-sm mb-2">Your feedback and reflections are different from your session transcripts.</p>
 					<p class="text-sm">The researcher <strong>will</strong> read your post-session feedback and final reflections, and will know who submitted them. This is so the researcher can understand your experience of using Ray.</p>
 				</div>
-				<div class="input-field bg-white/40">
-					<p class="font-bold text-sm mb-1">What if the researcher wants to quote me?</p>
-					<p class="text-sm">If the researcher wants to use a quote from your reflections in the final findings, <strong>they will check with you first</strong>. Nothing is quoted without your permission, and all quotes are anonymised.</p>
-				</div>
+				<details class="accordion-item input-field bg-white/40">
+					<summary class="font-bold text-sm">What if the researcher wants to quote me?</summary>
+					<p class="text-sm mt-2">If the researcher wants to use a quote from your reflections in the final findings, <strong>they will check with you first</strong>. Nothing is quoted without your permission, and all quotes are anonymised.</p>
+				</details>
 			</div>
 		</section>
 
@@ -103,26 +103,26 @@ import PageNav from '../components/PageNav.astro';
 		<section>
 			<h2 class="heading-lg mb-4">What You Control</h2>
 			<div class="space-y-4">
-				<div class="input-field bg-white/40">
-					<p class="font-bold text-sm mb-1">Can I edit or delete my profile context?</p>
-					<p class="text-sm">Yes. You can update or clear the "Help Ray know you" form anytime from the menu. If you clear it, Ray will only know your display name.</p>
-				</div>
-				<div class="input-field bg-white/40">
-					<p class="font-bold text-sm mb-1">Can I delete my data?</p>
-					<p class="text-sm">Yes. You can delete individual sessions or your entire account anytime during the pilot.</p>
-				</div>
-				<div class="input-field bg-white/40">
-					<p class="font-bold text-sm mb-1">Can I withdraw?</p>
-					<p class="text-sm">Yes. You can withdraw from the research completely before March 1, 2026. If you withdraw, all your data will be deleted and not used in the research.</p>
-				</div>
-				<div class="input-field bg-white/40">
-					<p class="font-bold text-sm mb-1">Can I opt out of AI training?</p>
-					<p class="text-sm">Yes. You can prevent ElevenLabs from using your voice data to train their AI models. This doesn't affect Ray's research use.</p>
-				</div>
-				<div class="input-field bg-white/40">
-					<p class="font-bold text-sm mb-1">Is it anonymous?</p>
-					<p class="text-sm">Yes. All data is anonymised (participant codes only, no names).</p>
-				</div>
+				<details class="accordion-item input-field bg-white/40">
+					<summary class="font-bold text-sm">Can I edit or delete my profile context?</summary>
+					<p class="text-sm mt-2">Yes. You can update or clear the "Help Ray know you" form anytime from the menu. If you clear it, Ray will only know your display name.</p>
+				</details>
+				<details class="accordion-item input-field bg-white/40">
+					<summary class="font-bold text-sm">Can I delete my data?</summary>
+					<p class="text-sm mt-2">Yes. You can delete individual sessions or your entire account anytime during the pilot.</p>
+				</details>
+				<details class="accordion-item input-field bg-white/40">
+					<summary class="font-bold text-sm">Can I withdraw?</summary>
+					<p class="text-sm mt-2">Yes. You can withdraw from the research completely before March 1, 2026. If you withdraw, all your data will be deleted and not used in the research.</p>
+				</details>
+				<details class="accordion-item input-field bg-white/40">
+					<summary class="font-bold text-sm">Can I opt out of AI training?</summary>
+					<p class="text-sm mt-2">Yes. You can prevent ElevenLabs from using your voice data to train their AI models. This doesn't affect Ray's research use.</p>
+				</details>
+				<details class="accordion-item input-field bg-white/40">
+					<summary class="font-bold text-sm">Is it anonymous?</summary>
+					<p class="text-sm mt-2">Yes. All data is anonymised (participant codes only, no names).</p>
+				</details>
 			</div>
 		</section>
 
@@ -152,25 +152,25 @@ import PageNav from '../components/PageNav.astro';
 					<p class="text-sm">ElevenLabs processes your voice data under their Terms of Service and Privacy Policy, in addition to Ray's research protocols.</p>
 				</div>
 
-				<div class="input-field bg-white/40">
-					<p class="font-bold text-sm mb-1">What ElevenLabs does with your voice</p>
-					<ul class="list-disc pl-4 space-y-2 text-sm">
+				<details class="accordion-item input-field bg-white/40">
+					<summary class="font-bold text-sm">What ElevenLabs does with your voice</summary>
+					<ul class="list-disc pl-4 space-y-2 text-sm mt-2">
 						<li>Stores your voice recordings for up to <strong>3 years</strong> after your last session (unless you request deletion sooner)</li>
 						<li>May classify your voice as <strong>biometric data</strong> under certain laws — used solely for verification and voice modelling, never for profiling or targeting</li>
 						<li>Uses voice data to provide Ray's services and may use it to improve their AI models (<strong>you can opt out</strong> of training use)</li>
 						<li>Monitors content for <strong>safety and fraud prevention</strong> — in certain cases, may share content with third-party moderators</li>
 						<li>Stores data in the <strong>US, Netherlands, and Singapore</strong> (all data transfers to the United States for storage)</li>
 					</ul>
-				</div>
+				</details>
 
-				<div class="input-field bg-white/40">
-					<p class="font-bold text-sm mb-1">Your ElevenLabs rights</p>
-					<ul class="list-disc pl-4 space-y-2 text-sm">
+				<details class="accordion-item input-field bg-white/40">
+					<summary class="font-bold text-sm">Your ElevenLabs rights</summary>
+					<ul class="list-disc pl-4 space-y-2 text-sm mt-2">
 						<li>Request deletion of your voice data anytime</li>
 						<li>Opt out of AI training use</li>
 						<li>Access, correct, or restrict processing of your data</li>
 					</ul>
-				</div>
+				</details>
 
 				<div class="glass-panel p-5 rounded-sm border-l-4 border-charcoal/40">
 					<p class="text-sm"><strong>Two layers of data control:</strong> The researcher controls how your conversation content is used for research purposes. ElevenLabs controls the technical processing and storage of your voice recordings. Ray's research data sovereignty protocols are separate from ElevenLabs' platform policies.</p>
