@@ -179,7 +179,13 @@ No. Ray is coaching, not therapy. Ray can't treat mental health conditions or pr
 Yes. You can have a session alone, or with a partner, friend, or family member present. Ray can work with both of you at once.
 
 **Does Ray remember previous conversations?**
-No. For this pilot, each session starts fresh. Ray has no memory of what you've talked about before. Part of the research is learning whether that fresh-start approach feels helpful or limiting.
+Each session starts fresh — Ray doesn't remember what you talked about in previous sessions.
+
+However, if you fill in the **"Help Ray know you"** form (in the menu), Ray will know your context at the start of every session — things like your relationship status, partner's name, or living situation. This means you don't have to re-explain the basics each time.
+
+Ray also knows how many sessions you've had and when your last one was, so it can pick up naturally.
+
+**What's the difference?** Ray knows *who you are* (context you've shared) but not *what you've said* (previous conversation content). Part of the research is learning how this fresh-start approach feels.
 
 **How long are sessions?**
 Sessions are capped at 1 hour, but you decide how long you engage. Most sessions run 15-45 minutes. Use Ray as often as you like during the pilot.
@@ -257,7 +263,7 @@ Relationships are one of the most vulnerable contexts we navigate. If AI can be 
 The researcher is studying your *experience* of using Ray:
 - Did it feel respectful, safe, and helpful?
 - What worked and what didn't?
-- How did the lack of memory between sessions feel?
+- How did the fresh-start approach feel — where Ray knows your context but not your previous conversations?
 - Did the cultural values come through in how Ray interacted with you?
 
 **The researcher will NOT read your session transcripts.**
@@ -366,7 +372,7 @@ You understood that:
 - Ray is coaching, not therapy
 - Ray can't help in a crisis
 - Sessions cap at 1 hour
-- Each session starts fresh with no memory
+- Each session starts fresh — Ray doesn't remember previous conversation content (but knows your profile context if you've shared it)
 - You can withdraw before March 1, 2026
 
 ---
@@ -387,6 +393,25 @@ Only high-level aggregate analysis across all participants — broad themes, com
 
 ---
 
+### Your Profile Context ("Help Ray Know You")
+
+**This is profile data you choose to share — not a transcript, not AI-generated.**
+It's the same category as your display name. You control what goes in, and you can change or delete it anytime.
+
+**What is it?**
+A form in the menu where you can optionally share context about yourself — relationship status, partner's name, children, occupation, living situation, or anything else you think would help. All fields are optional.
+
+**What does Ray do with it?**
+Ray receives your context at the start of each session so it doesn't have to ask you the basics every time. Ray also knows your session number, when your last session was, and how many days it's been — so it can pick up naturally.
+
+**Is this the same as Ray remembering conversations?**
+No. Ray still doesn't remember what you talked about. It only knows the context you've explicitly shared in your profile. Each conversation still starts fresh.
+
+**Can I change or delete it?**
+Yes. You can edit or clear your profile context anytime from the menu. If you delete it, Ray goes back to knowing nothing about you beyond your name.
+
+---
+
 ### Feedback & Reflections
 
 **Your feedback and reflections are different from your session transcripts.**
@@ -398,6 +423,9 @@ If the researcher wants to use a quote from your reflections in the final findin
 ---
 
 ### What You Control
+
+**Can I edit or delete my profile context?**
+Yes. You can update or clear the "Help Ray know you" form anytime from the menu. If you clear it, Ray will only know your display name.
 
 **Can I delete my data?**
 Yes. You can delete individual sessions or your entire account anytime during the pilot.
@@ -415,6 +443,7 @@ Yes. All data is anonymised (participant codes only, no names).
 
 ### How Your Data is Protected
 
+- **Profile context** ("Help Ray know you") is stored as standard profile data in your account — you control it, and it's never included in transcripts or analysis
 - **Session transcripts** are anonymised by AI (personal details removed) and assigned a participant number — the researcher never reads them directly
 - Only **high-level aggregate analysis** is done on transcripts (themes, topics, patterns)
 - **Feedback and reflections** are read by the researcher, but any quotes require your permission first

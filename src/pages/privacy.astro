@@ -27,8 +27,8 @@ import PageNav from '../components/PageNav.astro';
 					<li>Your conversations are private</li>
 					<li>Ray is coaching, not therapy</li>
 					<li>Ray can't help in a crisis</li>
-					<li>Sessions cap at 1 hour</li>
-					<li>Each session starts fresh with no memory</li>
+					<li>Sessions cap at 45 minutes</li>
+					<li>Each session starts fresh — Ray doesn't remember previous conversation content (but knows your profile context if you've shared it)</li>
 					<li>You can withdraw before March 1, 2026</li>
 				</ul>
 			</div>
@@ -57,6 +57,33 @@ import PageNav from '../components/PageNav.astro';
 			</div>
 		</section>
 
+		<!-- Your Profile Context -->
+		<section>
+			<h2 class="heading-lg mb-4">Your Profile Context ("Help Ray Know You")</h2>
+			<div class="space-y-4">
+				<div class="glass-panel p-5 rounded-sm border-l-4 border-forest-green mb-4">
+					<p class="font-bold text-sm mb-2">This is profile data you choose to share — not a transcript, not AI-generated.</p>
+					<p class="text-sm">It's the same category as your display name. You control what goes in, and you can change or delete it anytime.</p>
+				</div>
+				<div class="input-field bg-white/40">
+					<p class="font-bold text-sm mb-1">What is it?</p>
+					<p class="text-sm">A form in the menu where you can optionally share context about yourself — relationship status, partner's name, children, occupation, living situation, or anything else you think would help. All fields are optional.</p>
+				</div>
+				<div class="input-field bg-white/40">
+					<p class="font-bold text-sm mb-1">What does Ray do with it?</p>
+					<p class="text-sm">Ray receives your context at the start of each session so it doesn't have to ask you the basics every time. Ray also knows your session number, when your last session was, and how many days it's been — so it can pick up naturally.</p>
+				</div>
+				<div class="input-field bg-white/40">
+					<p class="font-bold text-sm mb-1">Is this the same as Ray remembering conversations?</p>
+					<p class="text-sm">No. Ray still doesn't remember what you talked about. It only knows the context you've explicitly shared in your profile. Each conversation still starts fresh.</p>
+				</div>
+				<div class="input-field bg-white/40">
+					<p class="font-bold text-sm mb-1">Can I change or delete it?</p>
+					<p class="text-sm">Yes. You can edit or clear your profile context anytime from the menu. If you delete it, Ray goes back to knowing nothing about you beyond your name.</p>
+				</div>
+			</div>
+		</section>
+
 		<!-- Feedback & Reflections -->
 		<section>
 			<h2 class="heading-lg mb-4">Feedback & Reflections</h2>
@@ -76,6 +103,10 @@ import PageNav from '../components/PageNav.astro';
 		<section>
 			<h2 class="heading-lg mb-4">What You Control</h2>
 			<div class="space-y-4">
+				<div class="input-field bg-white/40">
+					<p class="font-bold text-sm mb-1">Can I edit or delete my profile context?</p>
+					<p class="text-sm">Yes. You can update or clear the "Help Ray know you" form anytime from the menu. If you clear it, Ray will only know your display name.</p>
+				</div>
 				<div class="input-field bg-white/40">
 					<p class="font-bold text-sm mb-1">Can I delete my data?</p>
 					<p class="text-sm">Yes. You can delete individual sessions or your entire account anytime during the pilot.</p>
@@ -100,6 +131,7 @@ import PageNav from '../components/PageNav.astro';
 			<h2 class="heading-lg mb-4">How Your Data is Protected</h2>
 			<div class="glass-panel p-5 rounded-sm border-l-4 border-forest-green">
 				<ul class="list-disc pl-4 space-y-3 text-sm">
+					<li><strong>Profile context</strong> ("Help Ray know you") is stored as standard profile data in your account — you control it, and it's never included in transcripts or analysis</li>
 					<li><strong>Session transcripts</strong> are anonymised by AI (personal details removed) and assigned a participant number — the researcher never reads them directly</li>
 					<li>Only <strong>high-level aggregate analysis</strong> is done on transcripts (themes, topics, patterns)</li>
 					<li><strong>Feedback and reflections</strong> are read by the researcher, but any quotes require your permission first</li>
