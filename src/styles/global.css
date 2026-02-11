@@ -65,7 +65,7 @@ Let's go with a solid, slightly translucent box for readability.
 }
 /* Layout Utilities */
 .page-container {
-@apply max-w-md mx-auto px-6 py-12 min-h-screen flex flex-col;
+@apply max-w-md md:max-w-2xl lg:max-w-4xl mx-auto px-6 py-12 min-h-screen flex flex-col;
 }
 .label-sm {
 @apply text-xs font-bold uppercase tracking-[0.15em] text-warm-grey;
@@ -79,7 +79,7 @@ Let's go with a solid, slightly translucent box for readability.
 }
 /* Sticky navigation bar */
 .nav-bar {
-@apply fixed top-0 left-0 right-0 z-50 bg-linen/95 backdrop-blur-md border-b border-charcoal/10 px-6 py-3 flex items-center justify-between max-w-md mx-auto;
+@apply fixed top-0 left-0 right-0 z-50 bg-linen/95 backdrop-blur-md border-b border-charcoal/10 px-6 py-3 flex items-center justify-between max-w-md md:max-w-2xl lg:max-w-4xl mx-auto;
 }
 /* Navigation card for home page */
 .nav-card {
