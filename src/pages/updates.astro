@@ -1,0 +1,46 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PageNav from '../components/PageNav.astro';
+---
+
+<Layout title="Pilot Updates - RAY" currentPage="Updates">
+	<main class="space-y-16 pb-8 animate-fade-in">
+
+		<section>
+			<h1 class="heading-xl mb-4">Pilot Updates</h1>
+			<p class="body-text">
+				Changes, fixes, and notices since the pilot began. Newest updates appear first.
+			</p>
+		</section>
+
+		<!-- Updates -->
+		<section class="space-y-6">
+
+			<!-- 12 Feb 2025 — 1:30 PM -->
+			<div class="glass-panel p-5 rounded-sm border-l-4 border-clay">
+				<div class="flex items-center gap-2 mb-1">
+					<p class="label-sm text-warm-grey">12 Feb — 1:30 PM</p>
+					<span class="text-[10px] font-bold uppercase tracking-wide bg-clay/15 text-clay px-2 py-0.5 rounded-full">High Impact</span>
+				</div>
+				<p class="font-bold mb-2">LLM switched from Claude Haiku 4.5 to Gemini Flash 2.5</p>
+				<p class="body-text text-sm">
+					We realised that with Claude Haiku 4.5 we were going to run out of credits well before the two-week mark. To make sure everyone gets enough time with Ray, we've switched the underlying model to Gemini Flash 2.5, which gives us significantly more minutes. This may affect Ray's voice and performance at times — if you notice anything odd, please let the researcher know. Better to make this change now while the pilot is still early.
+				</p>
+			</div>
+
+			<!-- 12 Feb 2025 — 12:00 PM -->
+			<div class="glass-panel p-5 rounded-sm border-l-4 border-forest-green">
+				<p class="label-sm text-warm-grey mb-1">12 Feb — 12:00 PM</p>
+				<p class="font-bold mb-2">Fix: Ray no longer says "pause" or "brief pause" out loud</p>
+				<p class="body-text text-sm">
+					A participant reported that Ray was literally saying words like "pause" and "brief pause" instead of just pausing naturally like a human would. We've updated Ray's system prompt to fix this behaviour.
+				</p>
+			</div>
+
+		</section>
+
+		<PageNav
+			prev={{ href: "/privacy", label: "Privacy & Timeline" }}
+		/>
+	</main>
+</Layout>
